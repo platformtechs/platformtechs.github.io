@@ -4,8 +4,9 @@ body{
     background: lighten(grey, 40%);
 }
 .navbar{
-    background-color: $color-primary;
-    background: linear-gradient($color-primary, $color-primary-light);
+    // background-color: $color-primary;
+    background-color: black;
+    // background: linear-gradient($color-primary, $color-primary-light);
     padding: 16px;
     box-shadow: 0 0 5px $color-primary-dark;
 }
@@ -13,15 +14,19 @@ body{
     color:white !important;
 }
 .navbar-nav > li > a{
+
     color: white !important;
     font-size: 1.9rem;
     padding-left: 80px;
+    // background-color: #08708A;
     @media(max-width:768px){
         padding-left: 10px;
     }
 }
 .thumbnail{
-  background: linear-gradient(to top right, $color-primary, $color-primary-light);
+  // background: linear-gradient(to top right, $color-primary, $color-primary-light);
+  // background: linear-gradient(to top right, #3696D6, #40B5C7);
+  background:#057591 ;
     .caption{
         color: white;
         font-size: 1.8rem;
@@ -31,19 +36,25 @@ body{
 }
 .cardslider{
     margin-top: 30px;
-    background-image: linear-gradient(to top left, $color-primary, lighten($color-primary, 60%));
+    background-image: linear-gradient(to top left,#40B5C7, #3696D6);
 }
 
-// Services 
+// Services
 .card{
-    background: radial-gradient($color-primary, $color-primary-light);
+    // background: radial-gradient(#3696D6, #40B5C7);
+    background:#057591 ;
     padding: 20px;
     color:white;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px $color-primary-dark;
+    box-shadow: 3px 3px 10px #3696D6;
     margin: 10px;
     margin-bottom: 40px;
+}
+
+.card img{
+  height: 100px;
+  width: 100px;
 }
 
 .about-content-right{
@@ -55,9 +66,12 @@ body{
   padding: 20px;
   margin-bottom: 100px;
     .content{
-       padding-left:180px; 
+       padding-left:180px;
     }
 }
+
+
+
 .about-content-left{
   background-image: url(../../img/bannerLeft.png);
   background-repeat:no-repeat;
@@ -67,7 +81,7 @@ body{
   padding: 20px;
   margin-bottom: 100px;
     .content{
-       padding-right:180px; 
+       padding-right:180px;
     }
 }
 .content{
@@ -82,7 +96,7 @@ body{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-} 
+}
 .content{
     padding: 100px;
     padding-left: 80px;
@@ -104,7 +118,7 @@ body{
         background-size: cover;
         .content{
             padding: 10px;
-            padding-top: 180px; 
+            padding-top: 180px;
         }
     }
     .about-content-left{
@@ -113,7 +127,7 @@ body{
         background-size: cover;
         .content{
             padding: 10px;
-            padding-bottom: 180px; 
+            padding-bottom: 180px;
         }
     }
 }
@@ -126,10 +140,10 @@ body{
     left:-80px;
     top: 80px;
     overflow: hidden;
-        
+
     }
 .about-content-left{
-   position: relative; 
+   position: relative;
 }
     #specific{
         position: absolute !important;
@@ -151,7 +165,7 @@ body{
 }
 .title-heading{
     text-align: center;
-    font-size: 2rem;
+    font-size: 40px;
     text-transform: uppercase;
     font-weight:normal;
     text-shadow: 0 1px 2px black;
@@ -166,20 +180,33 @@ body{
     }
 }
 
+// what we offer css
+.cards-heading{
+  font-size: 50px;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 // Services sections
 .service-options{
     padding: 20px 0px  100px;
-    background-image: linear-gradient(to top left, $color-primary, lighten($color-primary, 60%));
+    background-image: linear-gradient(to top left, #40B5C7, #3696D6);
     text-align: center;
     .col-md-4{
         line-height: inherit;
-        padding-top: 40px; 
+        padding-top: 40px;
     }
     .title-page{
-        background: rgba(255, 255, 255, 0.1);
+        // background: rgba(255, 255, 255, 0.1);
+        background-color: #057591;
         padding: 20px;
         color: white;
-        box-shadow: 0 -3px 10px $color-primary;
+        box-shadow: 0 -3px 10px #3696D6;
     }
 }
 .service-quote{
@@ -188,26 +215,78 @@ body{
     line-height: 1.5;
 }
 .section-testimonial{
-   background-image: linear-gradient(to top left, $color-primary, lighten($color-primary, 60%));
+   background-image: linear-gradient(to top left, #40B5C7, #3696D6);
     padding: 50px;
     text-align: center;
     color: white;
     font-size: 1.8rem;
 }
 footer, {
-    background: linear-gradient($color-primary, $color-primary-light);
+    // background: linear-gradient($color-primary, $color-primary-light);
+    background-color: black;
     padding: 20px;
     line-height: 1.5;
     color: white;
 }
+
+
+
+
 .section-contact, .section-technology{
-    background: linear-gradient($color-primary, $color-primary-light);
+    // background: linear-gradient($color-primary, $color-primary-light);
+    // background-image: linear-gradient(to top left,#40B5C7, #3696D6);
     color: white;
+    background-color: #057591;
     font-size: 1.5rem;
     .company{
         font-size: 2rem;
     }
 }
+
+.well{
+  background: #057591;
+  // margin-left: -20px;
+  color: white;
+  border: none;
+  // border-left: 2px solid white;
+  // text-align: center;
+  // border :4px solid red;// border-left: 2px solid white;
+}
+
+.well input{
+  background-color: #057591;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  color: white;
+  width:10px;
+
+}
+.well textarea{
+
+  background-color: #057591;
+  border:2px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: white;
+}
+
+.whyUs{
+  text-align: center;
+  padding: 1%  7% 0 8%;
+  // border-right: 2px solid white;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.border{
+  // border-left:2px solid white;
+  // border-bottom: 2px solid white;
+}
+
+
 #testimonial{
     border-right: 2px solid white;
 }
@@ -217,6 +296,9 @@ footer, {
 .maps{
     width: 100%;
     height: 500px;
+    margin-top: -2%;
+    margin-left: 1.9%;
+    // padding-right: 1000px;
 }
 .technology{
     img{
@@ -257,4 +339,32 @@ header{
     line-height: 1.5;
     text-shadow: 0 0 2px grey;
 }
+}
+
+.comm_vision{
+text-align: justify;
+margin: 8% 0;
+font-size: 24px;
+}
+
+.sub_head{
+  font-size: 36px;
+  text-align: center;
+  margin-bottom:2%;
+}
+
+.process-img{
+margin: 2%;
+margin-bottom: 4%;
+}
+
+.text{
+  font-family: 'Tinos', serif;
+}
+.head{
+  font-family: 'Poppins', sans-serif;
+
+}
+.cs-desc-content{
+  font-size: 24px;
 }
