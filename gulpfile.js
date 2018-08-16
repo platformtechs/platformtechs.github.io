@@ -133,7 +133,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('deploy', function() {
-  return gulp.src(bases.dist)
+  return gulp.src(bases.dist + '**/*')
     .pipe(deploy());
 });
 
